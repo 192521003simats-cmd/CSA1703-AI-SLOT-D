@@ -1,0 +1,11 @@
+INPUT:
+Crypt-Arithmetic Equation:
+  SEND
++ MORE
+------
+ MONEY
+
+OUTPUT:
+SEND = 9567
+MORE = 1085
+MONEY = 10652

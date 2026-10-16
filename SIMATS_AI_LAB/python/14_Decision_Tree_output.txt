@@ -1,0 +1,12 @@
+INPUT:
+Decision Tree Knowledge Base:
+{
+    'Sunny': {'High': 'No', 'Normal': 'Yes'},
+    'Overcast': 'Yes',
+    'Rain': {'High': 'No', 'Normal': 'Yes'}
+}
+Test Sample Query: ('Sunny', 'Normal')
+
+OUTPUT:
+Sample: ('Sunny', 'Normal')
+Play Decision: Yes

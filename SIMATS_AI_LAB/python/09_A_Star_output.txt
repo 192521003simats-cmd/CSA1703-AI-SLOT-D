@@ -1,0 +1,16 @@
+INPUT:
+Graph with Edge Weights:
+{
+    'A': [('B', 1), ('C', 4)],
+    'B': [('D', 3), ('G', 5)],
+    'C': [('G', 2)],
+    'D': [('G', 1)],
+    'G': []
+}
+Heuristic Table h(n) towards 'G':
+{'A': 5, 'B': 3, 'C': 2, 'D': 1, 'G': 0}
+Start = 'A', Goal = 'G'
+
+OUTPUT:
+Path: ['A', 'B', 'D', 'G']
+Cost: 5

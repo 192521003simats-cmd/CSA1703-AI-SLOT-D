@@ -1,0 +1,8 @@
+INPUT:
+Jug 1 Capacity = 4L
+Jug 2 Capacity = 3L
+Target Volume  = 2L
+Initial State  = (0, 0)
+
+OUTPUT:
+Steps: [(0, 0), (0, 3), (3, 0), (3, 3), (4, 2)]

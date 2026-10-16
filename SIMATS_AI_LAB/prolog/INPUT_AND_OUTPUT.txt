@@ -1,0 +1,163 @@
+======================================================================
+SIMATS AI LAB (CSA17) - PROLOG EXPERIMENTS (16 TO 29, 32, 33)
+COMPLETE INPUT (QUERY) AND OUTPUT COLLECTION
+======================================================================
+
+----------------------------------------------------------------------
+EXPERIMENT 16: SUM 1 TO N (16_Sum_1_to_N.pl)
+----------------------------------------------------------------------
+INPUT QUERY:
+?- sum(5, S).
+
+OUTPUT:
+S = 15.
+
+----------------------------------------------------------------------
+EXPERIMENT 17: NAME & DOB DATABASE (17_Name_DOB_Database.pl)
+----------------------------------------------------------------------
+INPUT QUERY:
+?- get_dob(alice, DOB).
+
+OUTPUT:
+DOB = '15-May-2001'.
+
+----------------------------------------------------------------------
+EXPERIMENT 18: STUDENT-TEACHER-SUBJECT (18_Student_Teacher_Subject.pl)
+----------------------------------------------------------------------
+INPUT QUERY:
+?- teacher_of(T, john).
+
+OUTPUT:
+T = dr_smith.
+
+----------------------------------------------------------------------
+EXPERIMENT 19: PLANETS DATABASE (19_Planets_Database.pl)
+----------------------------------------------------------------------
+INPUT QUERY:
+?- has_moons(earth).
+
+OUTPUT:
+true.
+
+----------------------------------------------------------------------
+EXPERIMENT 20: TOWERS OF HANOI (20_Towers_of_Hanoi.pl)
+----------------------------------------------------------------------
+INPUT QUERY:
+?- move(3, a, c, b).
+
+OUTPUT:
+Move disk from a to c
+Move disk from a to b
+Move disk from c to b
+Move disk from a to c
+Move disk from b to a
+Move disk from b to c
+Move disk from a to c
+true.
+
+----------------------------------------------------------------------
+EXPERIMENT 21: BIRD FLIGHT (21_Bird_Flight.pl)
+----------------------------------------------------------------------
+INPUT QUERY:
+?- can_fly(sparrow).
+?- can_fly(penguin).
+
+OUTPUT:
+true.
+false.
+
+----------------------------------------------------------------------
+EXPERIMENT 22: FAMILY TREE (22_Family_Tree.pl)
+----------------------------------------------------------------------
+INPUT QUERY:
+?- grandfather(G, mike).
+
+OUTPUT:
+G = john.
+
+----------------------------------------------------------------------
+EXPERIMENT 23: DIET SUGGESTION (23_Diet_Suggestion.pl)
+----------------------------------------------------------------------
+INPUT QUERY:
+?- suggest(diabetes, D).
+
+OUTPUT:
+D = 'Low sugar, high fiber'.
+
+----------------------------------------------------------------------
+EXPERIMENT 24: MONKEY-BANANA PROBLEM (24_Monkey_Banana.pl)
+----------------------------------------------------------------------
+INPUT QUERY:
+?- canget(state(door, window, on_floor, has_not), Plan).
+
+OUTPUT:
+Plan = [walk(door, window), push(window, middle), climb, grasp].
+
+----------------------------------------------------------------------
+EXPERIMENT 25: FRUIT AND COLOR (25_Fruit_Color_Backtracking.pl)
+----------------------------------------------------------------------
+INPUT QUERY:
+?- fruit_color(Fruit, red).
+?- fruit_color(grape, Color).
+
+OUTPUT:
+Fruit = apple.
+Color = green ;
+Color = purple.
+
+----------------------------------------------------------------------
+EXPERIMENT 26: BEST-FIRST SEARCH (26_Best_First_Search.pl)
+----------------------------------------------------------------------
+INPUT QUERY:
+?- best_fs(a, goal, Path).
+
+OUTPUT:
+Path = [a, b, goal].
+
+----------------------------------------------------------------------
+EXPERIMENT 27: MEDICAL DIAGNOSIS (27_Medical_Diagnosis.pl)
+----------------------------------------------------------------------
+INPUT QUERY:
+?- diagnose(D).
+
+OUTPUT:
+D = flu.
+
+----------------------------------------------------------------------
+EXPERIMENT 28: FORWARD CHAINING (28_Forward_Chaining.pl)
+----------------------------------------------------------------------
+INPUT QUERY:
+?- forward.
+
+OUTPUT:
+Forward Chaining Complete
+
+----------------------------------------------------------------------
+EXPERIMENT 29: BACKWARD CHAINING (29_Backward_Chaining.pl)
+----------------------------------------------------------------------
+INPUT QUERY:
+?- carnivore(tom).
+
+OUTPUT:
+true.
+
+----------------------------------------------------------------------
+EXPERIMENT 32: PATTERN MATCHING (32_Pattern_Matching.pl)
+----------------------------------------------------------------------
+INPUT QUERY:
+?- match_prefix([a, b], [a, b, c]).
+?- match_sub([b, c], [a, b, c, d]).
+
+OUTPUT:
+true.
+true.
+
+----------------------------------------------------------------------
+EXPERIMENT 33: COUNT VOWELS (33_Count_Vowels.pl)
+----------------------------------------------------------------------
+INPUT QUERY:
+?- count_vowels([a, r, t, i, f, i, c, i, a, l], N).
+
+OUTPUT:
+N = 5.
+======================================================================

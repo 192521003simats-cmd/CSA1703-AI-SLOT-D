@@ -1,0 +1,14 @@
+INPUT:
+Graph Adjacency List:
+{
+    'A': ['B', 'C'],
+    'B': ['D', 'E'],
+    'C': ['F'],
+    'D': [],
+    'E': [],
+    'F': []
+}
+Start Node = 'A'
+
+OUTPUT:
+DFS Traversal: ['A', 'B', 'D', 'E', 'C', 'F']

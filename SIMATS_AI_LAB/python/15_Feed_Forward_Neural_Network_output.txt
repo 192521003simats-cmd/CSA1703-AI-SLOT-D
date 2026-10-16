@@ -1,0 +1,22 @@
+INPUT:
+Training Input Matrix X:
+[[0, 0],
+ [0, 1],
+ [1, 0],
+ [1, 1]]
+
+Expected Target Labels y:
+[[0],
+ [1],
+ [1],
+ [0]]
+
+Epochs: 5000
+Learning Rate: 0.5
+
+OUTPUT:
+Predictions:
+[0 0] -> 0
+[0 1] -> 1
+[1 0] -> 1
+[1 1] -> 0

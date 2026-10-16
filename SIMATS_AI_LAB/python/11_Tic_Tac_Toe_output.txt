@@ -1,0 +1,10 @@
+INPUT:
+Board Size: 3x3
+Winning Lines: Rows, Columns, Diagonals
+Move Sequence: [(0, 'X'), (4, 'O'), (1, 'X'), (3, 'O'), (2, 'X')]
+
+OUTPUT:
+X | X | X
+O | O |  
+  |   |  
+Player X Wins!

@@ -1,0 +1,188 @@
+======================================================================
+SIMATS AI LAB (CSA17) - PYTHON EXPERIMENTS (01 TO 15)
+COMPLETE INPUT AND OUTPUT COLLECTION
+======================================================================
+
+----------------------------------------------------------------------
+EXPERIMENT 01: 8-PUZZLE PROBLEM (01_8_Puzzle.py)
+----------------------------------------------------------------------
+INPUT:
+Start State: (1, 2, 3, 4, 0, 6, 7, 5, 8)
+Goal State:  (1, 2, 3, 4, 5, 6, 7, 8, 0)
+
+OUTPUT:
+Solved in 2 moves:
+(1, 2, 3)
+(4, 0, 6)
+(7, 5, 8)
+
+(1, 2, 3)
+(4, 5, 6)
+(7, 0, 8)
+
+(1, 2, 3)
+(4, 5, 6)
+(7, 8, 0)
+
+----------------------------------------------------------------------
+EXPERIMENT 02: WATER JUG PROBLEM (02_Water_Jug.py)
+----------------------------------------------------------------------
+INPUT:
+Jug 1 Capacity = 4L
+Jug 2 Capacity = 3L
+Target Volume  = 2L
+Initial State  = (0, 0)
+
+OUTPUT:
+Steps: [(0, 0), (0, 3), (3, 0), (3, 3), (4, 2)]
+
+----------------------------------------------------------------------
+EXPERIMENT 03: CRYPT-ARITHMETIC PROBLEM (03_Crypt_Arithmetic.py)
+----------------------------------------------------------------------
+INPUT:
+Equation: SEND + MORE = MONEY
+
+OUTPUT:
+SEND = 9567
+MORE = 1085
+MONEY = 10652
+
+----------------------------------------------------------------------
+EXPERIMENT 04: MISSIONARIES AND CANNIBALS (04_Missionaries_Cannibals.py)
+----------------------------------------------------------------------
+INPUT:
+Initial State: 3 Missionaries, 3 Cannibals, 1 Boat on Left Bank
+Goal State:    0 Missionaries, 0 Cannibals on Left Bank
+Boat Limit:    2 Persons
+
+OUTPUT:
+Path: [(3, 3, 1), (3, 1, 0), (3, 2, 1), (3, 0, 0), (3, 1, 1), (1, 1, 0), (2, 2, 1), (0, 2, 0), (0, 3, 1), (0, 1, 0), (1, 1, 1), (0, 0, 0)]
+
+----------------------------------------------------------------------
+EXPERIMENT 05: VACUUM CLEANER PROBLEM (05_Vacuum_Cleaner.py)
+----------------------------------------------------------------------
+INPUT:
+Rooms: A, B
+Initial State: Room A = Dirty, Room B = Dirty
+Agent Start:   Room A
+
+OUTPUT:
+Room A is Dirty. Action: Clean
+Room B is Dirty. Action: Clean
+Final Status of Rooms: {'A': 'Clean', 'B': 'Clean'}
+
+----------------------------------------------------------------------
+EXPERIMENT 06: BREADTH-FIRST SEARCH (06_BFS.py)
+----------------------------------------------------------------------
+INPUT:
+Graph: {'A': ['B', 'C'], 'B': ['D', 'E'], 'C': ['F'], 'D': [], 'E': [], 'F': []}
+Start: 'A'
+
+OUTPUT:
+BFS Traversal: ['A', 'B', 'C', 'D', 'E', 'F']
+
+----------------------------------------------------------------------
+EXPERIMENT 07: DEPTH-FIRST SEARCH (07_DFS.py)
+----------------------------------------------------------------------
+INPUT:
+Graph: {'A': ['B', 'C'], 'B': ['D', 'E'], 'C': ['F'], 'D': [], 'E': [], 'F': []}
+Start: 'A'
+
+OUTPUT:
+DFS Traversal: ['A', 'B', 'D', 'E', 'C', 'F']
+
+----------------------------------------------------------------------
+EXPERIMENT 08: TRAVELLING SALESMAN PROBLEM (08_Travelling_Salesman.py)
+----------------------------------------------------------------------
+INPUT:
+Cities: 0, 1, 2, 3
+Cost Matrix:
+[0, 10, 15, 20]
+[10, 0, 35, 25]
+[15, 35, 0, 30]
+[20, 25, 30, 0]
+
+OUTPUT:
+Optimal Route: [0, 1, 3, 2, 0]
+Minimum Cost: 80
+
+----------------------------------------------------------------------
+EXPERIMENT 09: A* SEARCH ALGORITHM (09_A_Star.py)
+----------------------------------------------------------------------
+INPUT:
+Graph: A->(B:1, C:4), B->(D:3, G:5), C->(G:2), D->(G:1)
+Heuristic: {'A': 5, 'B': 3, 'C': 2, 'D': 1, 'G': 0}
+Start: 'A', Goal: 'G'
+
+OUTPUT:
+Path: ['A', 'B', 'D', 'G']
+Cost: 5
+
+----------------------------------------------------------------------
+EXPERIMENT 10: MAP COLORING USING CSP (10_Map_Coloring_CSP.py)
+----------------------------------------------------------------------
+INPUT:
+Regions: WA, NT, SA, Q, NSW, V
+Colors: Red, Green, Blue
+
+OUTPUT:
+Color Assignment: {'WA': 'Red', 'NT': 'Green', 'SA': 'Blue', 'Q': 'Red', 'NSW': 'Green', 'V': 'Red'}
+
+----------------------------------------------------------------------
+EXPERIMENT 11: TIC-TAC-TOE (11_Tic_Tac_Toe.py)
+----------------------------------------------------------------------
+INPUT:
+Board: 3x3 Grid
+Moves: [(0, 'X'), (4, 'O'), (1, 'X'), (3, 'O'), (2, 'X')]
+
+OUTPUT:
+X | X | X
+O | O |  
+  |   |  
+Player X Wins!
+
+----------------------------------------------------------------------
+EXPERIMENT 12: MINIMAX ALGORITHM (12_Minimax.py)
+----------------------------------------------------------------------
+INPUT:
+Leaf Values: [3, 5, 2, 9, 12, 5, 23, 23]
+Tree Height: 3
+
+OUTPUT:
+Optimal Value: 12
+
+----------------------------------------------------------------------
+EXPERIMENT 13: ALPHA-BETA PRUNING (13_Alpha_Beta_Pruning.py)
+----------------------------------------------------------------------
+INPUT:
+Leaf Values: [3, 5, 6, 9, 1, 2, 0, -1]
+Initial Alpha: -999, Beta: 999
+
+OUTPUT:
+Optimal Value with Pruning: 5
+
+----------------------------------------------------------------------
+EXPERIMENT 14: DECISION TREE (14_Decision_Tree.py)
+----------------------------------------------------------------------
+INPUT:
+Knowledge Rules: Outlook, Humidity -> Play
+Test Query: ('Sunny', 'Normal')
+
+OUTPUT:
+Sample: ('Sunny', 'Normal')
+Play Decision: Yes
+
+----------------------------------------------------------------------
+EXPERIMENT 15: FEED-FORWARD NEURAL NETWORK (15_Feed_Forward_Neural_Network.py)
+----------------------------------------------------------------------
+INPUT:
+XOR Training Matrix X: [[0,0], [0,1], [1,0], [1,1]]
+Targets y: [[0], [1], [1], [0]]
+
+OUTPUT:
+Predictions:
+[0 0] -> 0
+[0 1] -> 1
+[1 0] -> 1
+[1 1] -> 0
+======================================================================

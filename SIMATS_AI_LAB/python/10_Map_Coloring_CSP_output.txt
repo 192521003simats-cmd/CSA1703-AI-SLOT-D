@@ -1,0 +1,14 @@
+INPUT:
+Map Regions & Adjacency:
+{
+    'WA': ['NT', 'SA'],
+    'NT': ['WA', 'SA', 'Q'],
+    'SA': ['WA', 'NT', 'Q', 'NSW', 'V'],
+    'Q':  ['NT', 'SA', 'NSW'],
+    'NSW':['Q', 'SA', 'V'],
+    'V':  ['SA', 'NSW']
+}
+Available Colors: ['Red', 'Green', 'Blue']
+
+OUTPUT:
+Color Assignment: {'WA': 'Red', 'NT': 'Green', 'SA': 'Blue', 'Q': 'Red', 'NSW': 'Green', 'V': 'Red'}

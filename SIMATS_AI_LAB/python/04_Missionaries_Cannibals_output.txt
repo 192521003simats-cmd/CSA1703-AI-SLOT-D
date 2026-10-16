@@ -1,0 +1,7 @@
+INPUT:
+Initial State: 3 Missionaries, 3 Cannibals, Boat on Left Bank = (3, 3, 1)
+Goal State   : 0 Missionaries, 0 Cannibals, Boat on Left Bank = (0, 0, 0)
+Boat Capacity: 2 persons maximum
+
+OUTPUT:
+Path: [(3, 3, 1), (3, 1, 0), (3, 2, 1), (3, 0, 0), (3, 1, 1), (1, 1, 0), (2, 2, 1), (0, 2, 0), (0, 3, 1), (0, 1, 0), (1, 1, 1), (0, 0, 0)]

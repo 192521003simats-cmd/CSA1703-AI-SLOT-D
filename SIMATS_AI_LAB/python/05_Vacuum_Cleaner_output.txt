@@ -1,0 +1,9 @@
+INPUT:
+Environment: Room A, Room B
+Initial Status: Room A = Dirty, Room B = Dirty
+Agent Starting Location: Room A
+
+OUTPUT:
+Room A is Dirty. Action: Clean
+Room B is Dirty. Action: Clean
+Final Status of Rooms: {'A': 'Clean', 'B': 'Clean'}
